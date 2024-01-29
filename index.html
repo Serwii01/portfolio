@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Sergio Fernández</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="icon" href="foto.jpg" type="image/x-icon">
+    <link rel="icon" href="foto.jpg" sizes="16x16" type="image/jpg">
+    <link rel="icon" href="foto.jpg" sizes="32x32" type="image/jpg">
+    <link rel="icon" href="foto.jpg" sizes="48x48" type="image/jpg">
+</head>
+<body><br>
+    <div id="header">
+        <img src="foto.jpg" alt="foto curriculum">
+        <h2>Portfolio</h2>
+        <button id="modo-oscuro-btn">Modo Oscuro</button>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var modoOscuroBtn = document.getElementById('modo-oscuro-btn');
+                var body = document.body;
+            
+                modoOscuroBtn.addEventListener('click', function () {
+                    body.classList.toggle('modo-oscuro');
+                    updateButtonText();
+                });
+    
+                function updateButtonText() {
+                    var modoTexto = body.classList.contains('modo-oscuro') ? 'Modo Claro' : 'Modo Oscuro';
+                    modoOscuroBtn.textContent = modoTexto;
+                }
+            });
+        </script>
+    </div><br>
+    <div class="seccion">
+        <h3>Sobre mí</h3>
+        <div class="dobles">
+            <div class="interiores">
+                <h4>Info</h4>
+                <p>Me llamo Sergio Fernández Morales, tengo 18 años, soy un estusiasta de la informática especialmente de la programación con visión a estudios superiores y muchos proyectos por emprender.</p>
+            </div>
+            <div class="interiores">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><img src="img/telefono.png" alt="telefono" class="logos"> +34 653 38 42 82</li>
+                    <li><img src="img/mail.png" alt="mail" class="logos"> sfmrbb@gmail.com</li>
+                    <li><img src="img/linkedin.png" alt="linkedin" class="logos"><a href="www.linkedin.com/in/sergio-fernández-morales1" target="_blank"> Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><br>
+    <div class="seccion">
+        <h3>Estudios</h3>
+        <div class="dobles">
+            <div class="interiores">
+            <h4>ESO.</h4>
+            <p>IES San Pablo</p>
+            <p>2017-2021</p>
+        </div>
+        <div class="interiores">
+            <h4>CFGM Informática</h4>
+            <p>IES Ciudad Jardín</p>
+            <p>2022-2024</p>
+        </div>
+    </div>
+    </div><br>
+    <div class="seccion">
+        <h3>Titulaciones</h3>
+        <div id="padretitulaciones">
+            <div class="interiores">
+                <h4><a href="https://www.credly.com/badges/40c48b39-e7c5-4d3e-bb08-e3276de92491/public_url" target="_blank">CCNA: Introducing to networks</a></h4>
+                <p>Julio 2023</p>
+                <p><img src="img/cisco.png" alt="cisco" class="logos"> Emitido por Cisco</p>
+            </div>
+            <div class="interiores">
+                <h4><a href="https://drive.google.com/file/d/1BzKG68eDDF8xOcOIv8EuPLuVQ800A6W7/view?usp=sharing" target="_blank">Curso de Ciberseguridad</a></h4>
+                <p>Diciembre 2023</p>
+                <p class="largos"><img src="img/openwebinars.png" alt="openwebinars" class="logos"> Emitido por OpenWebinars</p>
+            </div>
+            <div class="interiores">
+                <h4><a href="https://drive.google.com/file/d/1-SJx0Gd-f1qJ7qzSuZQvdPIlzIJrP131/view?usp=sharing" target="_blank">Curso de responsive web design</a></h4>
+                <p>Diciembre 2023</p>
+                <p class="largos"><img src="img/openwebinars.png" alt="openwebinars" class="logos"> Emitido por OpenWebinars</p>
+            </div>
+            <div class="interiores">
+                <h4><a href="https://drive.google.com/file/d/1FYvZMghQkbXvuxNcJFHLbZ0kcS3P__sT/view?usp=sharing" target="_blank">Curso de HTML5 y CSS3</a></h4>
+                <p>Enero 2023</p>
+                <p class="largos"><img src="img/openwebinars.png" alt="openwebinars" class="logos"> Emitido por OpenWebinars</p>
+            </div>
+        </div>
+    </div><br>
+    <div class="seccion">
+        <h3>Experiencia</h3>
+        <div class="dobles">
+            <div class="interiores">
+                <h4><a href="https://www.sitspain.com/" target="_blank">SIT Spain </a><img src="img/sit.png" alt="sit" class="logos"></h4>
+                <p>Junio 2023 - Septiembre 2023</p>
+                <p>Control de inventario, carga y descarga de mudanzas y transporte y trata de obras de arte.</p>
+            </div>
+            <div class="interiores">
+                <h4><a href="https://fundacionjaes.org/" target="_blank">Junior Achievement </a><img src="img/juniora.png" alt="junior achievement" class="logos"></h4>
+                <p>Junio 2022</p>
+                <p>Finalista del programa de miniempresas impulsado por Junior Achievement, realizado en 2022 en el Wizink Center, Madrid.</p>
+            </div>
+        </div>
+    </div><br>
+    <div class="seccion">
+        <h3>Idiomas</h3>
+        <div class="dobles">
+            <div class="interiores">
+                <h4>Español</h4>
+                <p>Nativo</p>
+            </div>
+            <div class="interiores">
+                <h4>Inglés</h4>
+                <p>Cursando b2 Cambridge</p>
+            </div>
+        </div>
+    </div><br>
+    <div class="seccion">
+        <h3>Voluntariados</h3>
+        <div class="dobles">
+            <div class="interiores">
+                <h4><a href="https://forevergreen.es/" target="_blank">Real Betis Balompie </a><img src="img/betis.png" alt="betis" class="logos"></h4>
+                <p>Medioambiente</p>
+                <p>Septiembre 2023 - Actualidad</p>
+            </div>
+            <div class="interiores">
+                <h4><a href="https://www.okplanet.eu/" target="_blank">OK Planet </a><img src="img/okplanet.png" alt="okplanet" class="logos"></h4>
+                <p>Medioambiente</p>
+            </div>
+        </div>
+    </div><br>
+    <center>
+        <a href="cvSergioFdez.pdf" download="cvSergioFdez.pdf">Descarga aquí mi curriculum!</a>
+        <br><br>
+    </center>
+    <p>Desarrollado por Sergio Fernández ©</p>
+    <br><br>
+</body>
+</html>
