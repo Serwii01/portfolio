@@ -1,0 +1,252 @@
+body{
+    width: 80%;
+    margin: auto;
+    transition: 0.5s;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 25px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    color: black;
+}
+
+#header img {
+    width: 65px;
+    border-radius: 50%;
+    margin-right: 10px; /* Ajusta este margen según sea necesario */
+}
+
+#header h2 {
+    margin: 0; /* Elimina el margen predeterminado del encabezado */
+    flex-grow: 1; /* Ocupa el espacio restante para centrar el texto */
+    text-align: center; /* Centra el texto */
+}
+
+#modo-switch {
+    margin-left: auto; /* Mueve el interruptor hacia la derecha */
+}
+
+.logos{
+    width: 30px;
+    vertical-align: middle;
+}
+
+ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+a{
+    color: black;
+}
+
+h4{
+    text-align: left;
+}
+
+.seccion{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 25px;
+    text-align: justify;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    color: black;
+}
+
+.interiores{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 25px;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: 0.5s;
+}
+
+.dobles{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    color: black;
+    transition: 0.5s;
+}
+
+#padretitulaciones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    color: black;
+    transition: 0.5s;
+}
+
+@media (max-width: 810px){
+    #padretitulaciones{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .logos{
+        width: 28px;
+        vertical-align: middle;
+    }
+    h4{
+        text-align: left;
+    }
+}
+
+@media (max-width: 670px) {
+    #header{
+        gap: 1%;
+        font-size: 12px;
+        
+      }
+
+      #header button{
+        width: 35%;
+        font-size: 12px;
+      }
+      .dobles{
+        grid-template-columns: repeat(1, 1fr);
+      }
+      #padretitulaciones{
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .logos{
+        width: 25px;
+        vertical-align: middle;
+    }
+    } 
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode #header {
+    background-color: #555;
+    color: white;
+}
+
+
+.dark-mode .seccion{
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode .interiores{
+    background-color: #444;
+    color: white;
+}
+
+
+.dark-mode .dobles{
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode #padretitulaciones{
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode a{
+    background-color: #444;
+    color: white;
+}
+
+/*Switch*/
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #73C0FC;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    left: 2px;
+    bottom: 2px;
+    z-index: 2;
+    background-color: #e8e8e8;
+    transition: .4s;
+}
+
+.sun svg {
+    position: absolute;
+    top: 6px;
+    left: 36px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.moon svg {
+    fill: #73C0FC;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.sun svg, .moon svg {
+    fill: #fff;
+}
+
+.input:checked + .slider {
+    background-color: #183153;
+}
+
+.input:focus + .slider {
+    box-shadow: 0 0 1px #183153;
+}
+
+.input:checked + .slider:before {
+    transform: translateX(30px);
+}
