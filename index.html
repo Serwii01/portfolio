@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sergio Fernández · Programador</title>
+  <meta name="description" content="Portfolio de Sergio Fernández, programador full-stack de Sevilla. Java, Spring, Angular, React y muchas ganas de construir cosas." />
+  <meta name="theme-color" content="#FFFEFF" />
+  <meta property="og:title" content="Sergio Fernández · Programador" />
+  <meta property="og:description" content="Proyectos, trayectoria y certificaciones de Sergio Fernández." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#top" class="nav__logo" aria-label="Inicio">SF<span>.</span></a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#sobre">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#duoqit">DuoQIT</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#certificaciones">Certificaciones</a>
+    </nav>
+    <div class="nav__right">
+      <button class="shuffle" type="button" title="Cambiar colores (o pulsa espacio)" aria-label="Cambiar colores">
+        <span class="shuffle__dots"><i></i><i></i><i></i></span>
+      </button>
+      <a href="#contacto" class="btn btn--ink nav__cta">Hablemos</a>
+      <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu" aria-hidden="true">
+    <a href="#sobre">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#duoqit">DuoQIT</a>
+    <a href="#trayectoria">Trayectoria</a>
+    <a href="#certificaciones">Certificaciones</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__shapes" aria-hidden="true">
+        <span class="shape shape--circle" data-depth="0.6"></span>
+        <span class="shape shape--star" data-depth="1.2">✱</span>
+        <span class="shape shape--square" data-depth="0.9"></span>
+        <span class="shape shape--ring" data-depth="0.4"></span>
+      </div>
+
+      <p class="hero__status"><span class="dot"></span> Estudiando DAW · abierto a oportunidades</p>
+
+      <h1 class="hero__title" aria-label="Sergio Fernández">
+        <span class="misreg" data-text="SERGIO">SERGIO</span>
+        <span class="misreg" data-text="FERNÁNDEZ">FERNÁNDEZ</span>
+      </h1>
+
+      <div class="hero__bottom">
+        <p class="hero__lead">
+          Programador <mark class="hl hl--c">full-stack</mark> de Sevilla. Me encanta construir cosas que se
+          usan: mapas, juegos, plataformas… y aprender algo nuevo con cada una.
+        </p>
+        <div class="hero__actions">
+          <a href="#proyectos" class="btn btn--m">Ver proyectos ↓</a>
+          <a href="#" data-link="cv" class="btn" download>Descargar CV</a>
+        </div>
+      </div>
+
+      <p class="hero__hint">Psst… pulsa <kbd>espacio</kbd> para cambiar los colores</p>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track"></div>
+    </div>
+
+    <!-- SOBRE MÍ -->
+    <section class="section" id="sobre">
+      <header class="section__head">
+        <span class="section__num">01</span>
+        <h2 class="section__title">Sobre <span class="hl hl--y">mí</span></h2>
+      </header>
+
+      <div class="about">
+        <div class="about__text reveal">
+          <p class="big">
+            Soy un apasionado de la informática, ambicioso y con muchos objetivos por cumplir.
+          </p>
+          <p>
+            Empecé montando redes y formateando equipos, pasé por Java y Spring en Atos y he acabado
+            programando en Praga con un equipo internacional. Ahora estudio Desarrollo de Aplicaciones Web
+            para cerrar el círculo. Fuera del código he cargado con cuadros de Zurbarán, defendido una
+            startup en el WiZink Center y limpiado orillas del Guadalquivir.
+          </p>
+          <p>
+            Últimamente también me tira la cámara: estoy empezando con proyectos audiovisuales y, por hobby,
+            intentando montar una <mark class="hl hl--m">productora independiente</mark>.
+          </p>
+        </div>
+        <ul class="stats">
+          <li class="stat reveal" data-accent="m"><b data-count="12">12</b><span>proyectos en GitHub que merecen la pena</span></li>
+          <li class="stat reveal" data-accent="c"><b data-count="4">4</b><span>empresas, una de ellas en Praga</span></li>
+          <li class="stat reveal" data-accent="y"><b data-count="8">8</b><span>certificaciones</span></li>
+        </ul>
+      </div>
+
+      <div class="stack" id="stack"></div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section" id="proyectos">
+      <header class="section__head">
+        <span class="section__num">02</span>
+        <h2 class="section__title">Proyec<span class="hl hl--m">tos</span></h2>
+      </header>
+
+      <div class="filters" role="tablist" aria-label="Filtrar proyectos"></div>
+      <div class="projects"></div>
+
+      <div class="clients reveal">
+        <span class="clients__label">Y también webs para clientes →</span>
+        <div class="clients__list"></div>
+      </div>
+    </section>
+
+    <!-- DUOQIT -->
+    <section class="section" id="duoqit">
+      <header class="section__head">
+        <span class="section__num">03</span>
+        <h2 class="section__title">Mi <span class="hl hl--c">empresa</span></h2>
+      </header>
+      <div class="biz"></div>
+    </section>
+
+    <!-- TRAYECTORIA -->
+    <section class="section" id="trayectoria">
+      <header class="section__head">
+        <span class="section__num">04</span>
+        <h2 class="section__title">Trayec<span class="hl hl--c">toria</span></h2>
+      </header>
+
+      <div class="journey">
+        <div class="journey__col">
+          <h3 class="journey__label" data-icon="Briefcase">Trabajo</h3>
+          <ol class="timeline" id="work"></ol>
+        </div>
+        <div class="journey__col">
+          <h3 class="journey__label" data-icon="GraduationCap">Estudios</h3>
+          <ol class="timeline" id="studies"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICACIONES -->
+    <section class="section" id="certificaciones">
+      <header class="section__head">
+        <span class="section__num">05</span>
+        <h2 class="section__title">Certifica<span class="hl hl--y">ciones</span></h2>
+      </header>
+      <div class="certs"></div>
+    </section>
+
+    <!-- MÁS ALLÁ -->
+    <section class="section" id="extra">
+      <header class="section__head">
+        <span class="section__num">06</span>
+        <h2 class="section__title">Más allá del <span class="hl hl--m">código</span></h2>
+      </header>
+      <div class="extras"></div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+      <p class="contact__kicker">07 — Contacto</p>
+      <h2 class="contact__title">
+        <span class="line">¿Construimos</span>
+        <span class="line">algo <span class="hl hl--y">juntos</span>?</span>
+      </h2>
+      <button class="contact__mail" type="button" data-copy>
+        <span class="contact__mail-text"></span>
+        <span class="contact__mail-tip">Copiar</span>
+      </button>
+      <div class="contact__links">
+        <a data-link="github" target="_blank" rel="noopener" class="btn btn--c">GitHub ↗</a>
+        <a data-link="linkedin" target="_blank" rel="noopener" class="btn btn--m">LinkedIn ↗</a>
+        <a data-link="cv" class="btn btn--y" download>CV (PDF) ↓</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span class="year"></span> Sergio Fernández</span>
+    <span class="footer__made" data-icon="Coffee" data-icon-after>Hecho en Sevilla con mucho</span>
+    <a href="#top">Volver arriba ↑</a>
+  </footer>
+
+  <div class="detail" role="dialog" aria-modal="true" aria-labelledby="detail-title" hidden>
+    <div class="detail__backdrop" data-close></div>
+    <div class="detail__panel" data-lenis-prevent></div>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
