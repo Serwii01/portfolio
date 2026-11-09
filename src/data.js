@@ -137,7 +137,7 @@ export const projects = [
     year: '2026',
     cat: 'games',
     accent: 'm',
-    shots: 1,
+    shots: 2,
     mobile: true,
     desc: 'Blackjack multijugador online para 1–6 personas con conexión P2P, chat en mesa y estética de sala de neones. 100 % estático: sin servidor ni base de datos.',
     long: [
